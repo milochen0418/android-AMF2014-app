@@ -1,0 +1,253 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" 
+            android:background="@drawable/head_bar_bg"
+            android:orientation="horizontal" >
+ 
+			<Button 
+                android:id="@+id/back_btn"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:textSize="30dp"
+                android:text="&lt;"
+                android:textColor="#FFFFFFFF"
+                android:background="#00000000" >
+            </Button>
+             <TextView android:text="@string/personal_header_text"
+                 android:textSize="20dp"
+                 android:textColor="#FFFFFFFF"
+                 android:gravity="center"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.6"
+                 android:background="#00000000"  
+                 />
+            <Button android:id="@+id/personal_edit"
+                android:text="@string/personal_edit_text"
+                android:textSize="20dp"
+                android:textColor="#FFFFFFFF"                
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:background="#00000000" />
+            
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical" 
+            >
+            
+			<ScrollView
+			    android:visibility="visible" 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    >
+			    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+			        		
+					<TableLayout android:layout_width="match_parent" android:layout_height="match_parent" >
+						<TableRow 
+							android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >				    	
+					    	<ImageView
+					    	    android:paddingLeft="10dip"  
+					    	     android:layout_width="70dip"  android:layout_height="70dip"  
+					    	     android:gravity="right" android:textAlignment="gravity"
+					    	     android:background="@drawable/icon_contact1" 
+					    	     />
+					    	<LinearLayout 
+					    	    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.88"
+					    	    android:orientation="vertical" android:padding="10dip"
+					    	    >
+					    	    <View android:layout_height="0dip" android:layout_width="match_parent" android:layout_weight="1"></View>
+						    	<TextView android:id="@+id/personal_name_text_view"
+						    	    android:visibility="visible"
+						    	    android:text="黃多莉" 
+						    	    android:textSize="15dip"
+						    	    android:textColor="#707070"
+						    	    android:layout_width="match_parent" android:layout_height="wrap_content" />
+						    	
+						    	<EditText
+						    	    android:hint="@string/personal_name_hint_text"
+						    	    android:visibility="gone"
+						    	    android:id="@+id/personal_name_edit_text"
+						    	    android:text="黃多莉"
+						    	    android:textSize="15dip" 
+						    	    android:textColor="#0099FF"
+						    	    android:drawablePadding="0dip" 
+						    	    android:layout_width="match_parent" android:layout_height="wrap_content" />
+								<View android:layout_height="0dip" android:layout_width="match_parent" android:layout_weight="1"></View>
+					    	</LinearLayout>
+					    					    					    	
+					    	
+						</TableRow>
+						
+						<View android:layout_height="1dip" android:background="#707070" />
+						
+						<TableRow 
+							android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+					    	<ImageView
+					    	    android:paddingLeft="10dip"  
+					    	     android:layout_width="70dip"  android:layout_height="70dip"  
+					    	     android:gravity="right" android:textAlignment="gravity"
+					    	     android:background="@drawable/icon_contact2" 
+					    	     />
+					    	<LinearLayout 
+					    	    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.88"
+					    	    android:orientation="vertical" android:padding="10dip"
+					    	    >
+					    	    <View android:layout_height="0dip" android:layout_width="match_parent" android:layout_weight="1"></View>
+						    	<TextView android:id="@+id/personal_jobtitle_text_view"
+						    	    android:visibility="visible"
+						    	    android:text="黃多莉" 
+						    	    android:textSize="15dip"
+						    	    android:textColor="#707070"
+						    	    android:layout_width="match_parent" android:layout_height="wrap_content" />
+						    	
+						    	<EditText
+						    	    android:hint="@string/personal_orgenization_hint_text"
+						    	    android:visibility="gone"
+						    	    android:id="@+id/personal_jobtitle_edit_text"
+						    	    android:text="黃多莉"
+						    	    android:textSize="15dip" 
+						    	    android:textColor="#0099FF"
+						    	    android:drawablePadding="0dip" 
+						    	    android:layout_width="match_parent" android:layout_height="wrap_content" />
+								<View android:layout_height="0dip" android:layout_width="match_parent" android:layout_weight="1"></View>
+					    	</LinearLayout>
+						    					    	
+						
+						</TableRow>
+						
+						<View android:layout_height="1dip" android:background="#707070" />
+						
+						<TableRow 
+							android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >						    
+					    	<ImageView
+					    	    android:paddingLeft="10dip"  
+					    	     android:layout_width="70dip"  android:layout_height="70dip"  
+					    	     android:gravity="right" android:textAlignment="gravity"
+					    	     android:background="@drawable/icon_contact5" 
+					    	     />
+					    	<LinearLayout 
+					    	    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.88"
+					    	    android:orientation="vertical" android:padding="10dip"
+					    	    >
+					    	    <View android:layout_height="0dip" android:layout_width="match_parent" android:layout_weight="1"></View>
+						    	<TextView android:id="@+id/personal_phonenumber_text_view"
+						    	    android:visibility="visible"
+						    	    android:text="電話號碼" 
+						    	    android:textSize="15dip"
+						    	    android:textColor="#707070"
+						    	    android:layout_width="match_parent" android:layout_height="wrap_content" />
+						    	
+						    	<EditText
+						    	    android:hint="@string/personal_phone_number_hint_text"
+						    	    android:visibility="gone"
+						    	    android:id="@+id/personal_phonenumber_edit_text"
+						    	    android:text="電話號碼"
+						    	    android:inputType="phone"
+						    	    android:textSize="15dip" 
+						    	    android:textColor="#0099FF"
+						    	    android:drawablePadding="0dip" 
+						    	    android:layout_width="match_parent" android:layout_height="wrap_content" />
+								<View android:layout_height="0dip" android:layout_width="match_parent" android:layout_weight="1"></View>
+					    	</LinearLayout>						    
+						    
+
+						</TableRow>
+						<View android:layout_height="1dip" android:background="#707070" />					
+																
+						<TableRow 
+							android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+					    	
+					    	<ImageView
+					    	    android:paddingLeft="10dip"  
+					    	     android:layout_width="70dip"  android:layout_height="70dip"  
+					    	     android:gravity="right" android:textAlignment="gravity"
+					    	     android:background="@drawable/icon_contact4" 
+					    	     />
+					    	<LinearLayout 
+					    	    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.88"
+					    	    android:orientation="vertical" android:padding="10dip"
+					    	    >
+					    	    <View android:layout_height="0dip" android:layout_width="match_parent" android:layout_weight="1"></View>
+						    	<TextView android:id="@+id/personal_email_text_view"
+						    	    android:visibility="visible"
+						    	    android:text="Email電子信箱" 
+						    	    android:textSize="15dip"
+						    	    android:textColor="#707070"
+						    	    android:layout_width="match_parent" android:layout_height="wrap_content" />
+						    	
+						    	<EditText
+						    	    android:hint="@string/personal_email_hint_text"
+						    	    android:visibility="gone"
+						    	    android:id="@+id/personal_email_edit_text"
+						    	    android:text="Email信箱"
+						    	    android:inputType="textEmailAddress"
+						    	    android:textSize="15dip" 
+						    	    android:textColor="#0099FF"
+						    	    android:drawablePadding="0dip" 
+						    	    android:layout_width="match_parent" android:layout_height="wrap_content" />
+								<View android:layout_height="0dip" android:layout_width="match_parent" android:layout_weight="1"></View>
+					    	</LinearLayout>		
+	
+						</TableRow>
+						<View android:layout_height="1dip" android:background="#707070" />
+						
+											
+						<TableRow android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" android:paddingLeft="20dip" android:paddingRight="20dip">
+						    <Button android:id="@+id/regenerate_qrcode_btn"
+						        android:layout_weight="1"
+						        android:layout_height="wrap_content"
+						        android:layout_width="0dp"
+						        android:gravity="center" android:textAlignment="gravity"
+						        android:text="@string/personal_regenerate_qrcode_text"
+						        android:background="#0099FF"
+						        android:textColor="#FFFFFF"
+						        android:padding="6dip"
+						         />
+						</TableRow>
+						
+						<TableRow 
+						    android:background="#FFFFFF" 
+						    android:paddingTop="0dip" android:paddingBottom="16dip" 
+						    android:layout_width="match_parent"
+						    >
+				             <LinearLayout 
+				                 android:layout_weight="1"
+				                 android:layout_width="0dp"
+				                 android:layout_height="wrap_content"
+				                 android:orientation="horizontal"
+				                 android:gravity="center_horizontal"
+				                 >
+											      
+					            <ImageView android:id="@+id/qrcode_image_view"                
+						             android:layout_width="240dip"
+						             android:layout_height="240dip"     
+					             />  			                			                 			                 
+				             </LinearLayout>
+						</TableRow>		
+					</TableLayout>			        
+			    </LinearLayout>	
+			</ScrollView>            
+            
+        
+                 
+            
+            <!--  major body -->
+        </LinearLayout>
+	</LinearLayout> 
+</FrameLayout>

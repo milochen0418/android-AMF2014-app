@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" 
+            android:background="@drawable/head_bar_bg"
+            android:orientation="horizontal" >
+
+			<Button 
+                android:id="@+id/back_btn"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:textSize="30dp"
+                android:text="&lt;"
+                android:textColor="#FFFFFFFF"
+                android:background="#00000000" >
+            </Button>
+             <TextView android:text="@string/friend_header_text"
+                 android:textSize="20dp"
+                 android:textColor="#FFFFFFFF"
+                 android:gravity="center"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.6"
+                 android:background="#00000000"
+                                  
+                 />
+            <Button 
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:background="#00000000" >
+            </Button>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9" 
+            >
+            <!--  major body -->
+			<ScrollView
+			    android:id="@+id/day_1_info_view"
+			    android:visibility="visible" 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    >
+				<TableLayout android:layout_width="match_parent" android:layout_height="match_parent" >
+			
+					
+					<TableRow 
+						android:background="#0099FF" android:paddingTop="10dip" android:paddingBottom="10dip" >
+				    	<TextView android:text="@string/friend_group1_name_text" android:paddingLeft="20dip" 
+				    	    android:textColor="#FFFFFF" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text="" 
+				    	    android:textColor="#FFFFFF" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					
+					
+					<TableRow android:id="@+id/friend_item_A1"
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="The Global Association of the Exhibition Industry (UFI)" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />
+					
+					<TableRow android:id="@+id/friend_item_A2"
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="International Congress and Convention Association (ICCA)" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />									     
+
+					<TableRow android:id="@+id/friend_item_A3"
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="The International Association of Exhibitions and Events (IAEE)" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />									     
+							
+					<TableRow android:id="@+id/friend_item_A4" 
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="Sydney Festival 2015" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />									     
+			
+					<TableRow android:id="@+id/friend_item_A5" 
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="Asian Federation of Exhibition and Convention Associations (AFECA)" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					
+					
+														     
+																						
+					<TableRow 
+						android:background="#0099FF" android:paddingTop="10dip" android:paddingBottom="10dip" >
+				    	<TextView android:text="@string/friend_group2_name_text" android:paddingLeft="20dip" 
+				    	    android:textColor="#FFFFFF" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text="" 
+				    	    android:textColor="#FFFFFF" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					
+					<TableRow android:id="@+id/friend_item_B1"
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="中華國際會議展覽協會" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />							
+
+					<TableRow android:id="@+id/friend_item_B2"
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="中華民國展覽暨會議高業同業公會" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />							
+											
+					
+					
+					<TableRow 
+						android:background="#0099FF" android:paddingTop="10dip" android:paddingBottom="10dip" >
+				    	<TextView android:text="@string/friend_group3_name_text" android:paddingLeft="20dip" 
+				    	    android:textColor="#FFFFFF" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text="" 
+				    	    android:textColor="#FFFFFF" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />							
+						
+					
+					<TableRow android:id="@+id/friend_item_C1" 
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="經濟部國際貿易局" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />							
+									
+					<TableRow android:id="@+id/friend_item_C2"
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="台灣會展領航計劃" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />		
+					
+					<TableRow android:id="@+id/friend_item_C3" 
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="外貿協會" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />		
+					
+					<TableRow android:id="@+id/friend_item_C4"
+						android:background="#FFFFFF" android:paddingTop="16dip" android:paddingBottom="16dip" >
+				    	<TextView android:text="台灣會展卡" android:paddingLeft="20dip" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.9" android:gravity="left" android:textAlignment="gravity" />
+				    	<TextView android:text=">" 
+				    	    android:textColor="#707070" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1" />				    				    	
+					</TableRow>
+					<View android:layout_height="1dip" android:background="#707070" />												
+																		
+				</TableLayout>
+			</ScrollView>            
+            
+            
+            
+        </LinearLayout>
+	</LinearLayout> 
+</FrameLayout>

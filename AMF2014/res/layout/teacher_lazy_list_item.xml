@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <ImageView
+        android:paddingLeft="3dip"
+        android:paddingRight="13dip"
+        android:id="@+id/image"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_contact1" />
+
+	<TextView 
+	    android:id="@+id/text"
+	    android:text="ABCDE"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dip"	    
+	    android:textColor="#777777"
+	    android:gravity="center_vertical" />    
+    
+    
+</LinearLayout>

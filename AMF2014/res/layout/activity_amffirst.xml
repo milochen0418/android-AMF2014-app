@@ -1,0 +1,366 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+   	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:background="#FFFFFF"
+   	    android:orientation="vertical" 
+   	    >
+   	    <!-- android:background="@drawable/first_page"  -->
+   	</LinearLayout>
+   	    
+   	
+	<ImageView
+	    android:id="@+id/bottom_banner_img"
+	    android:layout_gravity="center_vertical|bottom"
+	    android:src="@drawable/bottom_banner_android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scaleType="centerInside"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true" 
+	/>   	
+	
+   	<LinearLayout 
+   	    android:layout_width="match_parent" 
+   	    android:layout_height="match_parent"
+   	    android:orientation="vertical"
+   	    >
+
+	   	<LinearLayout 
+	   	    android:layout_width="match_parent" 
+	   	    android:layout_height="0dp"
+	   	    android:layout_weight="0.185"
+	   	    android:orientation="horizontal"
+	   	    android:background="@drawable/head_bar_bg"
+	   	    >
+	   	  
+			<Button 
+                android:id="@+id/back_btn"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.05"
+                android:textSize="30dp"
+                android:text=""
+                android:textColor="#FFFFFFFF"
+                android:background="#00000000" >
+            </Button>
+             <TextView 
+                 android:text="@string/amffirst_headbar_text"
+                 android:textSize="20dp"
+                 android:textColor="#FFFFFFFF"
+                 android:gravity="center"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.9"
+                 android:background="#00000000"
+                                  
+                 />
+            <Button 
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.05"
+                android:background="#00000000" >
+            </Button>
+            
+	   	    	   	    
+	   	    
+		</LinearLayout>
+   	    	    <!-- 亞洲會展產業論壇 -->
+
+		<View android:layout_width="match_parent" android:layout_height="10dip" ></View>
+   	    <LinearLayout
+			android:layout_width="match_parent" 
+	   	    android:layout_height="0dp"
+	   	    android:layout_weight="0.345"
+	   	    android:orientation="horizontal"
+	   	    android:background="#00000000"
+	   	    android:paddingLeft="16dip"
+	   	    android:paddingRight="16dip"
+   	        >
+   	            
+   	        <FrameLayout 
+   	            android:id="@+id/go_introduction_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt1"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt1_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"/>
+			</FrameLayout>
+
+   	        <FrameLayout 
+   	            android:id="@+id/go_schedule_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt2"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt2_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"
+   	                 />
+			</FrameLayout>
+
+   	        
+   	        <FrameLayout 
+   	            android:id="@+id/go_teacher_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt3"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt3_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"/>
+			</FrameLayout>   
+   	    </LinearLayout>
+
+   	    <LinearLayout
+			android:layout_width="match_parent" 
+	   	    android:layout_height="0dp"
+	   	    android:layout_weight="0.345"
+	   	    android:orientation="horizontal"
+	   	    android:background="#00000000"
+	   	    android:paddingLeft="16dip"
+	   	    android:paddingRight="16dip"
+   	        >
+   	            
+   	        <FrameLayout 
+   	            android:id="@+id/go_personal_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt4"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt4_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"/>
+			</FrameLayout>
+
+   	        <FrameLayout 
+   	            android:id="@+id/go_qrcode_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt5"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt5_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"
+   	                 />
+			</FrameLayout>
+
+   	        
+   	        <FrameLayout 
+   	            android:id="@+id/go_contact_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt6"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt6_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"/>
+			</FrameLayout>   
+   	    </LinearLayout>
+   	      	    
+ 	    	   	  
+   	    <LinearLayout
+			android:layout_width="match_parent" 
+	   	    android:layout_height="0dp"
+	   	    android:layout_weight="0.345"
+	   	    android:orientation="horizontal"
+	   	    android:background="#00000000"
+	   	    android:paddingLeft="16dip"
+	   	    android:paddingRight="16dip"
+   	        >
+   	            
+   	        <FrameLayout 
+   	            android:id="@+id/go_news_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt7"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt7_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"/>
+			</FrameLayout>
+
+   	        <FrameLayout 
+   	            android:id="@+id/go_linkfb_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt8"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt8_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"
+   	                 />
+			</FrameLayout>
+
+   	        
+   	        <FrameLayout 
+   	            android:id="@+id/go_friend_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#FFFFFF">
+   	            <ImageView 
+   	                android:src="@drawable/bt9"
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:layout_margin="7dip"
+   	                android:layout_gravity="center"
+   	                />
+   	            <TextView 
+   	                android:layout_height="wrap_content"
+   	                android:layout_width="wrap_content"
+   	                android:textColor="#707070"
+   	                android:text="@string/amffirst_bt9_text"
+   	                android:layout_marginBottom="12dip"
+   	                android:layout_gravity="center_horizontal|bottom"/>
+			</FrameLayout>   
+   	    </LinearLayout>
+   	    
+   	    <!--  	    
+   	    <LinearLayout
+			android:layout_width="match_parent" 
+   	    	android:layout_height="0dp"
+   	    	android:layout_weight="0.345"
+	   	    android:orientation="horizontal"
+	   	    android:background="#00000000"
+   	        >	  
+
+   	        <Button android:id="@+id/go_news_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#00000000"
+   	            />
+
+   	        <Button android:id="@+id/go_linkfb_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#00000000"
+   	            />
+
+   	        <Button android:id="@+id/go_friend_btn"
+				android:layout_width="0dp"
+   	            android:layout_height="match_parent"
+   	            android:layout_weight="1"
+   	            android:background="#00000000"
+   	            />
+    	           
+   	    </LinearLayout>
+   	  	-->
+   	    	   	    
+	   	       
+		
+	   	<LinearLayout 
+	   	    android:layout_width="match_parent" 
+	   	    android:layout_height="0dp"
+	   	    android:layout_weight="0.69"
+	   	    android:orientation="vertical"
+	   	    android:background="#00000000"
+	   	    >
+   	        <!-- android:background="#80808030" -->
+		</LinearLayout>
+	   			
+   	    	    	    
+   	    
+   	    
+   	</LinearLayout>
+   	    
+
+
+</FrameLayout>

@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" 
+            android:background="@drawable/head_bar_bg"
+            android:orientation="horizontal" >
+      
+			<Button 
+                android:id="@+id/back_btn"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:textSize="30dp"
+                android:text="&lt;"
+                android:textColor="#FFFFFFFF"
+                android:background="#00000000" >
+            </Button>
+             <TextView android:text="@string/speaker_header_text"
+                 android:textSize="20dp"
+                 android:textColor="#FFFFFFFF"
+                 android:gravity="center"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.6"
+                 android:background="#00000000"
+                                  
+                 />
+            <Button 
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:background="#00000000" >
+            </Button>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.815" 
+            >
+            <WebView android:id="@+id/detail_webview"
+                android:layout_width="match_parent" 
+                android:layout_height="match_parent"
+                />
+                
+            <!-- 
+			<ListView android:id="@+id/list_view"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+		        android:drawSelectorOnTop="true"
+	    		android:clickable="true"
+	    		android:cacheColorHint="#00000000"
+	    		android:background="#00000000"
+			    />
+			    -->
+			    <!-- 
+			    <Button android:text="Teacher Detail" 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        />
+			        -->
+             <!--  major body -->
+        </LinearLayout>	
+	</LinearLayout> 
+</FrameLayout>
